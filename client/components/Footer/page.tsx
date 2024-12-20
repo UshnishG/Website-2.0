@@ -140,7 +140,15 @@ export const Footer = () => {
                       href="https://github.com/themesberg/flowbite"
                       className="hover:underline "
                     >
-                      Github
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://discord.gg/4eeurUVvTy"
+                      className="hover:underline"
+                    >
+                      Discord
                     </a>
                   </li>
                   <li>

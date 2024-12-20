@@ -10,7 +10,7 @@ export const Hero = () => {
     <div className="w-full">
     <div className="w-full h-[60vh] p-8 flex flex-col justify-center items-center">
       <div className=" flex flex-col items-start justify-center h-full gap-4 w-5/6">
-        <h1 className="text-5xl font-bold">Join Limbo Hack</h1>
+        <h1 className="text-5xl font-bold">Join ULTRON 8.0</h1>
         <div className="relative w-fit">
           <TypeAnimation
             sequence={[
@@ -31,23 +31,15 @@ export const Hero = () => {
           />
         </div>
         <p className="text-4xl font-extralight">
-          Join us on 20th November 2021 with over 300 students from across the
-          nation for 24 hours of creation, innovation, & fun.
+          Join us from 29th January to 31st January with over 300 students from 
+        </p>
+        <p className="text-4xl font-extralight">
+          across different departments for 3days of creation, innovation, & fun.
         </p>
         <DottedButton className="flex items-center gap-4">
           <FaDiscord width={"20px"} height={"20px"} />
-          join Discord
+          join Whatsapp
         </DottedButton>
-        <div className="flex w-full gap-4">
-        <DottedButton className="flex items-center gap-4 w-40">
-          <FaDiscord width={"20px"} height={"20px"} />
-          judge
-        </DottedButton>
-        <DottedButton className="flex items-center gap-4 w-44">
-          <FaDiscord width={"20px"} height={"20px"} />
-          register
-        </DottedButton>
-      </div>
       </div>
     </div>
     <div className="w-full flex items-center justify-center">
