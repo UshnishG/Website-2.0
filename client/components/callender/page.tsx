@@ -2,7 +2,7 @@ import React from "react";
 
 export const Calender = () => {
   return (
-    <div className="w-[40rem] h-full p-4"> 
+    <div className="w-[40rem] h-full p-4">
       <div className="w-full h-full flex flex-col justify-center">
         <h2 className="text-base font-semibold leading-6 text-white">
           Event Calender
@@ -33,7 +33,7 @@ export const Calender = () => {
                   27
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-gray-50 text-gray-400 hover:bg-gray-100 focus:z-10"
               >
@@ -44,7 +44,7 @@ export const Calender = () => {
                   28
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
@@ -55,7 +55,7 @@ export const Calender = () => {
                   29
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
@@ -66,7 +66,7 @@ export const Calender = () => {
                   30
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
@@ -77,7 +77,7 @@ export const Calender = () => {
                   31
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -88,7 +88,7 @@ export const Calender = () => {
                   1
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -99,7 +99,7 @@ export const Calender = () => {
                   2
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -110,7 +110,7 @@ export const Calender = () => {
                   3
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -121,7 +121,7 @@ export const Calender = () => {
                   4
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -132,7 +132,7 @@ export const Calender = () => {
                   5
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -143,7 +143,7 @@ export const Calender = () => {
                   6
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -154,7 +154,7 @@ export const Calender = () => {
                   7
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -165,7 +165,7 @@ export const Calender = () => {
                   8
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -176,9 +176,9 @@ export const Calender = () => {
                   9
                 </time>
               </button>
- <button
+              <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-red-500   text-gray-900 hover:bg-red-300 focus:z-10"
+                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-10"
@@ -187,7 +187,7 @@ export const Calender = () => {
                   10
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -198,7 +198,7 @@ export const Calender = () => {
                   11
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -209,7 +209,7 @@ export const Calender = () => {
                   12
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -220,7 +220,7 @@ export const Calender = () => {
                   13
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -231,7 +231,7 @@ export const Calender = () => {
                   14
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -242,7 +242,7 @@ export const Calender = () => {
                   15
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -253,7 +253,7 @@ export const Calender = () => {
                   16
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -264,7 +264,7 @@ export const Calender = () => {
                   17
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -275,7 +275,7 @@ export const Calender = () => {
                   18
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -286,7 +286,7 @@ export const Calender = () => {
                   19
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -297,7 +297,7 @@ export const Calender = () => {
                   20
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -308,7 +308,7 @@ export const Calender = () => {
                   21
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -319,7 +319,7 @@ export const Calender = () => {
                   22
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -330,7 +330,7 @@ export const Calender = () => {
                   23
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -341,7 +341,7 @@ export const Calender = () => {
                   24
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -352,7 +352,7 @@ export const Calender = () => {
                   25
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -363,7 +363,7 @@ export const Calender = () => {
                   26
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -374,7 +374,7 @@ export const Calender = () => {
                   27
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
@@ -385,9 +385,9 @@ export const Calender = () => {
                   28
                 </time>
               </button>
- <button
+              <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="h-20 w-20  rounded-full bg-red-500   text-gray-900 hover:bg-red-300 focus:z-10"
               >
                 <time
                   dateTime="2022-01-29"
@@ -396,9 +396,9 @@ export const Calender = () => {
                   29
                 </time>
               </button>
- <button
+              <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="h-20 w-20  rounded-full bg-red-500   text-gray-900 hover:bg-red-300 focus:z-10"
               >
                 <time
                   dateTime="2022-01-30"
@@ -407,9 +407,9 @@ export const Calender = () => {
                   30
                 </time>
               </button>
- <button
+              <button
                 type="button"
-                className="h-20 w-20  rounded-full  bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="h-20 w-20  rounded-full bg-red-500   text-gray-900 hover:bg-red-300 focus:z-10"
               >
                 <time
                   dateTime="2022-01-31"
@@ -418,7 +418,7 @@ export const Calender = () => {
                   31
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
@@ -429,7 +429,7 @@ export const Calender = () => {
                   1
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
@@ -440,7 +440,7 @@ export const Calender = () => {
                   2
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
@@ -451,7 +451,7 @@ export const Calender = () => {
                   3
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
@@ -462,7 +462,7 @@ export const Calender = () => {
                   4
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
@@ -473,7 +473,7 @@ export const Calender = () => {
                   5
                 </time>
               </button>
- <button
+              <button
                 type="button"
                 className="h-20 w-20 rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >

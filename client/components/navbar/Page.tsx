@@ -48,7 +48,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="sm:mx-4">
-            <a href="/events" className="text-white hover:text-cyan-300">
+            <a href="#" className="text-white hover:text-cyan-300">
               EVENTS
             </a>
           </li>
