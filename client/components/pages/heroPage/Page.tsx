@@ -32,10 +32,7 @@ export const Hero = () => {
           </div>
           <p className="text-4xl font-extralight">
             Join us from 29th January to 31st January with over 300 students
-            from
-          </p>
-          <p className="text-4xl font-extralight">
-            across different departments for 3days of creation, innovation, &
+            from across different departments for 3days of creation, innovation, &
             fun.
           </p>
           <DottedButton className="flex items-center gap-4">

@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ULTRON 8.0 FUTURIX C-TECH",
+  title: "ULTRON 8.0 Futurix C-Tech",
   description: "Futurix C.Tech Official Student Association",
 };
 
