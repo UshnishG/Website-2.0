@@ -38,7 +38,7 @@ const Navbar = () => {
           className="pt-4 text-base text-gray-950 sm:flex sm:justify-between sm:pt-0"
         >
           <li className="sm:mx-4">
-            <Link href="/" className="text-white hover:text-cyan-300">
+            <Link href="" className="text-white hover:text-cyan-300">
               HOME
             </Link>
           </li>
