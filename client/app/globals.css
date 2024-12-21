@@ -7,13 +7,6 @@
   --foreground: #ededed;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: linear-gradient(45deg, #410075, #000000);
-    --foreground: #ededed;
-  }
-}
-
 @font-face {
   font-family: 'Cascadia Code';
   src: url('/fonts/CascadiaCode-Regular.ttf') format('truetype');
@@ -31,7 +24,15 @@
 }
 
 body {
-  color: var(--foreground);
+  background: black; /* Fallback */
   background: var(--background);
   font-family: 'Cascadia Code', monospace;
+  color: var(--foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: linear-gradient(180deg, #12061b, #3d0e53);
+    --foreground: #ededed;
+  }
 }
