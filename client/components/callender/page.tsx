@@ -2,7 +2,7 @@ import React from "react";
 
 export const Calender = () => {
   return (
-    <div className="w-[40rem] h-full p-4">
+    <div className="lg:w-[40rem] w-[30rem] h-full p-4">
       <div className="w-full h-full flex flex-col justify-center">
         <h2 className="text-base font-semibold leading-6 text-white">
           Event Calender
@@ -24,7 +24,7 @@ export const Calender = () => {
             <div className="isolate mt-2 grid grid-cols-7 gap-2 rounded-lg text-sm shadow">
               <button
                 type="button"
-                className="h-20 w-20 rounded-full bg-gray-50 text-gray-400 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-gray-50 text-gray-400 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2021-12-27"
@@ -35,7 +35,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-gray-50 text-gray-400 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-gray-50 text-gray-400 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2021-12-28"
@@ -46,7 +46,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2021-12-29"
@@ -57,7 +57,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2021-12-30"
@@ -68,7 +68,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2021-12-31"
@@ -79,7 +79,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-01"
@@ -90,7 +90,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-01"
@@ -101,7 +101,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-02"
@@ -112,7 +112,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-04"
@@ -123,7 +123,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-05"
@@ -134,7 +134,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-06"
@@ -145,7 +145,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-07"
@@ -156,7 +156,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-08"
@@ -167,7 +167,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-09"
@@ -178,7 +178,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-10"
@@ -189,7 +189,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-11"
@@ -200,7 +200,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-12"
@@ -211,7 +211,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-13"
@@ -222,7 +222,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-14"
@@ -233,7 +233,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-15"
@@ -244,7 +244,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-16"
@@ -255,7 +255,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-17"
@@ -266,7 +266,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-18"
@@ -277,7 +277,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-19"
@@ -288,7 +288,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-20"
@@ -299,7 +299,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-21"
@@ -310,7 +310,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-22"
@@ -321,7 +321,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-23"
@@ -332,7 +332,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-24"
@@ -343,7 +343,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-25"
@@ -354,7 +354,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-26"
@@ -365,7 +365,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-27"
@@ -376,7 +376,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-white   text-gray-900 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-01-28"
@@ -387,7 +387,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-red-500   text-gray-900 hover:bg-red-300 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-red-500   text-gray-900 hover:bg-red-300 focus:z-10"
               >
                 <time
                   dateTime="2022-01-29"
@@ -398,7 +398,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-red-500   text-gray-900 hover:bg-red-300 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-red-500   text-gray-900 hover:bg-red-300 focus:z-10"
               >
                 <time
                   dateTime="2022-01-30"
@@ -409,7 +409,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-red-500   text-gray-900 hover:bg-red-300 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-red-500   text-gray-900 hover:bg-red-300 focus:z-10"
               >
                 <time
                   dateTime="2022-01-31"
@@ -420,7 +420,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-02-01"
@@ -431,7 +431,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-02-02"
@@ -442,7 +442,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-02-03"
@@ -453,7 +453,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-02-04"
@@ -464,7 +464,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10  rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-02-05"
@@ -475,7 +475,7 @@ export const Calender = () => {
               </button>
               <button
                 type="button"
-                className="h-20 w-20 rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
+                className="lg:h-20 lg:w-20 sm:h-14 sm:w-14 w-10 h-10 rounded-full bg-gray-50   text-gray-400 hover:bg-gray-100 focus:z-10"
               >
                 <time
                   dateTime="2022-02-06"
