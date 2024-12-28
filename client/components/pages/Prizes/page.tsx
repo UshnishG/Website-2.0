@@ -3,7 +3,6 @@ import {
   FaTrophy,
   FaMedal,
   FaSkiingNordic,
-  FaBookOpen,
   FaUserFriends,
 } from "react-icons/fa";
 import { GiPerson, GiPaintBrush } from "react-icons/gi";

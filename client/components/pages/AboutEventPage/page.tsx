@@ -5,7 +5,7 @@ import aboutData from "@/data/Event.json"; // Adjust the path as necessary
 
 export const About = () => {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col" id="aboutus">
       <div className="lg:flex max-lg:flex-col-reverse max-lg:flex max-lg:gap-5 h-[60vh] justify-center items-center ">
         <div className="w-1/2 flex flex-col justify-start items-center">
           <h1 className="text-3xl font-bold text-gray-900">
@@ -25,10 +25,10 @@ export const About = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-12 pb-8">
         {aboutData.accordionItems.map((item, index) => (
-          <div className="rounded-full">
+          <div className="rounded" key={index}>
             <AccordionExpand
               key={index}
-              expandDefault={index === 0} // Expand the first accordion by default
+              expandDefault={index === 0 || index === 1} // Expand both the first and fourth accordion items
               heading={item.heading}
               content={item.content}
             />
