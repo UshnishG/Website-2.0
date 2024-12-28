@@ -8,7 +8,7 @@ export const About = () => {
     <div className="w-full flex flex-col" id="aboutus">
       <div className="lg:flex max-lg:flex-col-reverse max-lg:flex max-lg:gap-5 h-[60vh] justify-center items-center ">
         <div className="w-1/2 flex flex-col justify-start items-center">
-          <h1 className="text-3xl font-bold text-gray-900">
+          <h1 className="text-3xl font-bold text-white-900">
             {aboutData.eventName}
           </h1>
           <p className="">{aboutData.eventSummary}</p>
