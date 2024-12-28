@@ -3,8 +3,8 @@ import React from "react";
 
 export const Sponsors = () => {
   const sponsors = [
-    { id: 1, logo: "/public/assets/sublime.jpeg" },
-    { id: 2, logo: "/public/assets/sublime.jpeg" },
+    { id: 1, logo: "/client/public/assets/sublime.jpeg" },
+    { id: 2, logo: "/client/public/assets/sublime.jpeg" },
     { id: 3, logo: "/public/assets/sublime.jpeg" },
     { id: 4, logo: "/public/assets/sublime.jpeg" },
     { id: 5, logo: "/public/assets/sublime.jpeg" },
