@@ -28,7 +28,7 @@ export const About = () => {
           <div className="rounded" key={index}>
             <AccordionExpand
               key={index}
-              expandDefault={index === 0 || index === 1} // Expand both the first and fourth accordion items
+              expandDefault={index === 0} // Expand both the first and fourth accordion items
               heading={item.heading}
               content={item.content}
             />
