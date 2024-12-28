@@ -3,12 +3,12 @@ import React from "react";
 
 export const Sponsors = () => {
   const sponsors = [
-    { id: 1, logo: "/images/sponsor1.png" },
-    { id: 2, logo: "/images/sponsor2.png" },
-    { id: 3, logo: "/images/sponsor3.png" },
-    { id: 4, logo: "/images/sponsor4.png" },
-    { id: 5, logo: "/images/sponsor5.png" },
-    { id: 6, logo: "/images/sponsor6.png" },
+    { id: 1, logo: "public\assets\sublime.jpeg" },
+    { id: 2, logo: "public\assets\sublime.jpeg" },
+    { id: 3, logo: "public\assets\sublime.jpeg" },
+    { id: 4, logo: "public\assets\sublime.jpeg" },
+    { id: 5, logo: "public\assets\sublime.jpeg" },
+    { id: 6, logo: "public\assets\sublime.jpeg" },
   ];
 
   return (
