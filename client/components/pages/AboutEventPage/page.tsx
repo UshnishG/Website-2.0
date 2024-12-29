@@ -14,13 +14,14 @@ export const About = () => {
           <p className="">{aboutData.eventSummary}</p>
         </div>
         <div className="w-1/2 flex justify-center items-center">
-          <Image
-            src="client\public\assets\Recruiting24.jpg"
-            alt="About"
-            width={500}
-            height={500}
-            className="bg-slate-400 rounded-full w-40 h-40"
-          />
+        <Image
+  src="/assets/Recruiting24.jpg"
+  alt="About"
+  width={500}
+  height={500}
+  className="bg-slate-400 rounded-full w-40 h-40"
+/>
+
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-12 pb-8">
