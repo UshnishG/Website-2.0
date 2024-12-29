@@ -15,7 +15,7 @@ export const About = () => {
         </div>
         <div className="w-1/2 flex justify-center items-center">
           <Image
-            src="/path/to/image.jpg"
+            src="client\public\assets\Recruiting24.jpg"
             alt="About"
             width={500}
             height={500}
