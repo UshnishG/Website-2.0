@@ -50,13 +50,14 @@ const Navbar = () => {
               ABOUT
             </a>
           </li>
-          <li className="sm:mx-4">
-            <Devfolio />
-          </li>
+          
           <li className="sm:mx-4">
             <a href="#aboutus" className="text-white hover:text-cyan-300">
               FAQ
             </a>
+          </li>
+          <li className="sm:mx-4">
+            <Devfolio />
           </li>
         </ul>
       </div>
