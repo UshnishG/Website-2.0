@@ -36,3 +36,26 @@ body {
     --foreground: #ededed;
   }
 }
+
+/* Global CSS or in a CSS module */
+@keyframes moveTile {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(5px, 5px);
+  }
+  50% {
+    transform: translate(-5px, -5px);
+  }
+  75% {
+    transform: translate(10px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.tile-animation {
+  animation: moveTile 10s infinite ease-in-out;
+}
