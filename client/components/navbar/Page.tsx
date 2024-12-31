@@ -28,7 +28,38 @@ const Navbar = () => {
       {/* Hamburger Icon for Mobile */}
       <div className="sm:hidden">
         <button onClick={toggleMenu} className="text-white">
-          ☰
+        <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  className="w-12 h-12"
+>
+
+  <rect
+    x="14"
+    y="18"
+    width="36"
+    height="18"
+    fill="#B0B0B0"
+    stroke="black"
+    strokeWidth="2"
+    rx="3"
+  />
+  
+  <rect x="18" y="20" width="28" height="2" fill="black" />
+  <rect x="18" y="32" width="28" height="2" fill="black" />
+  
+ 
+  <rect x="28" y="36" width="8" height="20" fill="#4C4C4C" stroke="black" strokeWidth="2" />
+  <rect x="28" y="36" width="8" height="4" fill="black" />
+  <line x1="28" y1="38" x2="36" y2="44" stroke="white" strokeWidth="2" />
+  <line x1="28" y1="44" x2="36" y2="50" stroke="white" strokeWidth="2" />
+  <line x1="28" y1="50" x2="36" y2="56" stroke="white" strokeWidth="2" />
+  
+  
+  <rect x="27" y="56" width="10" height="4" fill="#B0B0B0" stroke="black" strokeWidth="2" />
+</svg>
+
+
         </button>
       </div>
 
