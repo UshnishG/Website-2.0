@@ -25,7 +25,7 @@ const Devfolio: React.FC = () => {
     <div
       className="apply-button "
       data-hackathon-slug="ultron-8" // Replace with the actual slug
-      data-button-theme="Dark"
+      data-button-theme="dark"
       style={{ height: "44px", width: "312px" }} // Inline styles for button size
     ></div>
   );
