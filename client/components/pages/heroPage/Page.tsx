@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import { FaDiscord } from "react-icons/fa";
 import { Calendar } from "../../callender/page";
 import Devfolio from "../../ui/DevfolioBtn"; // Update this path as needed
 
