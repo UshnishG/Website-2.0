@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { styled } from "@mui/system";
 import { FaChevronDown } from "react-icons/fa";
 
 interface AccordionProps {
@@ -9,58 +8,6 @@ interface AccordionProps {
   heading: string;
   content: string;
 }
-
-const AccordionWrapper = styled('div')({
-  width: '100%',
-  maxWidth: '700px',
-  margin: '20px auto',
-});
-
-const AccordionHeader = styled('div', {
-  shouldForwardProp: (prop) => prop !== 'isExpanded',
-})<{ isExpanded: boolean }>(({ isExpanded }) => ({
-  borderRadius: '9999px',
-  padding: '20px 40px',
-  background: 'linear-gradient(135deg, #6a0dad, #000000)',
-  color: '#fff',
-  fontWeight: 'bold',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  cursor: 'pointer',
-  transition: 'all 0.3s ease-in-out',
-  boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.25)',
-  '&:hover': {
-    transform: 'scale(1.03)',
-    boxShadow: '0px 6px 14px rgba(0, 0, 0, 0.35)',
-  },
-  ...(isExpanded && {
-    borderBottomLeftRadius: '0',
-    borderBottomRightRadius: '0',
-  }),
-}));
-
-const AccordionContent = styled('div', {
-  shouldForwardProp: (prop) => prop !== 'isExpanded',
-})<{ isExpanded: boolean }>(({ isExpanded }) => ({
-  background: 'rgba(0, 0, 0, 0.15)',
-  color: '#f5f5f5',
-  padding: isExpanded ? '20px 40px' : '0 40px',
-  maxHeight: isExpanded ? '1000px' : '0',
-  overflow: 'hidden',
-  transition: 'all 0.3s ease-in-out',
-  borderBottomLeftRadius: '9999px',
-  borderBottomRightRadius: '9999px',
-  fontSize: '1rem',
-  lineHeight: '1.6',
-}));
-
-const ExpandIcon = styled(FaChevronDown, {
-  shouldForwardProp: (prop) => prop !== 'isExpanded',
-})<{ isExpanded: boolean }>(({ isExpanded }) => ({
-  transition: 'transform 0.3s ease',
-  transform: isExpanded ? 'rotate(180deg)' : 'rotate(0)',
-}));
 
 const CustomAccordion: React.FC<AccordionProps> = ({
   expandDefault,
@@ -74,15 +21,47 @@ const CustomAccordion: React.FC<AccordionProps> = ({
   };
 
   return (
-    <AccordionWrapper>
-      <AccordionHeader isExpanded={isExpanded} onClick={toggleAccordion}>
-        <h3 style={{ margin: 0, fontSize: '1.25rem' }}>{heading}</h3>
-        <ExpandIcon isExpanded={isExpanded} />
-      </AccordionHeader>
-      <AccordionContent isExpanded={isExpanded}>
+    <div className="w-full max-w-[700px] mx-auto my-5 relative tile-animation">
+      <div
+        className={`
+          rounded-full p-5 bg-gradient-to-br from-purple-800 to-black text-white font-bold
+          flex items-center justify-between cursor-pointer transition-all duration-300 ease-in-out
+          shadow-md hover:scale-[1.03] hover:shadow-lg
+          ${isExpanded ? 'rounded-b-none' : ''}
+        `}
+        onClick={toggleAccordion}
+      >
+        <h3 className="text-xl m-0">{heading}</h3>
+        <FaChevronDown
+          className={`transition-transform duration-300 ${
+            isExpanded ? 'rotate-180' : ''
+          }`}
+        />
+      </div>
+      <div
+        className={`
+          bg-black bg-opacity-15 text-gray-100 overflow-hidden transition-all duration-300 ease-in-out
+          rounded-b-full text-base leading-relaxed
+          ${isExpanded ? 'max-h-[1000px] p-5' : 'max-h-0 p-0'}
+        `}
+      >
         <p>{content}</p>
-      </AccordionContent>
-    </AccordionWrapper>
+      </div>
+      {[...Array(5)].map((_, index) => (
+        <div
+          key={index}
+          className={`
+            absolute w-1 h-1 rounded-full bg-white opacity-0
+            animate-spark
+          `}
+          style={{
+            left: `${Math.random() * 100}%`,
+            top: `${Math.random() * 100}%`,
+            animationDelay: `${index * 0.2}s`,
+          }}
+        />
+      ))}
+    </div>
   );
 };
 

@@ -30,7 +30,7 @@ export const About = () => {
         {aboutData.accordionItems.map((item, index) => (
           <div className="rounded" key={index}>
             <AccordionExpand
-              expandDefault={index === 0} // Expand the first accordion item
+              expandDefault={false} // Expand the first accordion item
               heading={item.heading}
               content={item.content}
             />
