@@ -34,7 +34,7 @@ export const Hero = () => {
                 "Under Ultron 8.0, limits break",
                 1000,
               ]}
-              speed={50}ī
+              speed={50}
               style={{ fontSize: "1.2em" }}
               repeat={Infinity}
             />
