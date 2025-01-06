@@ -8,7 +8,6 @@ const Navbar = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [loadingPercentage, setLoadingPercentage] = useState(0);
-  const [scrollPercentage, setScrollPercentage] = useState(0);
 
   const toggleMenu = () => {
     setIsMenuVisible((prevState) => !prevState);
@@ -16,7 +15,7 @@ const Navbar = () => {
 
   // Simulate loading process
   useEffect(() => {
-    let interval: NodeJS.Timeout;
+    let interval: NodeJS.Timeout; // Explicitly typing the interval variable
     if (isLoading) {
       interval = setInterval(() => {
         setLoadingPercentage((prev) => {
@@ -29,21 +28,8 @@ const Navbar = () => {
         });
       }, 50);
     }
-    return () => clearInterval(interval);
+    return () => clearInterval(interval); // Cleanup to avoid memory leaks
   }, [isLoading]);
-
-  // Track scrolling percentage
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollPercent = (scrollTop / scrollHeight) * 100;
-      setScrollPercentage(Math.min(scrollPercent, 100));
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   if (isLoading) {
     return (
@@ -79,7 +65,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-gray-900 via-black to-gray-900 shadow-lg">
       <div className="container mx-auto flex items-center justify-between px-4 py-4 md:px-8">
-        {/* Logo Section with Scroll Indicator */}
+        {/* Logo Section */}
         <div className="flex items-center relative">
           <Image
             src={logo}
@@ -88,44 +74,6 @@ const Navbar = () => {
             height={400}
             className="w-32 md:w-40"
           />
-          <div className="ml-4 flex items-center space-x-2">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 100 100"
-              className="relative"
-            >
-              <circle
-                cx="50"
-                cy="50"
-                r="45"
-                stroke="#E0E0E0"
-                strokeWidth="5"
-                fill="none"
-              />
-              <circle
-                cx="50"
-                cy="50"
-                r="45"
-                stroke="#00BFFF"
-                strokeWidth="5"
-                strokeDasharray={Math.PI * 2 * 45}
-                strokeDashoffset={(1 - scrollPercentage / 100) * Math.PI * 2 * 45}
-                fill="none"
-              />
-              <text
-                x="50%"
-                y="50%"
-                fill="#FFFFFF"
-                fontSize="12"
-                fontWeight="bold"
-                textAnchor="middle"
-                alignmentBaseline="middle"
-              >
-                {Math.round(scrollPercentage)}%
-              </text>
-            </svg>
-          </div>
         </div>
 
         {/* Thor Hammer Icon for Mobile */}
