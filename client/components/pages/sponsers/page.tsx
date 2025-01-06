@@ -1,4 +1,4 @@
-import DottedButton from "@/components/ui/Button";
+
 import React from "react";
 
 export const Sponsors = () => {
