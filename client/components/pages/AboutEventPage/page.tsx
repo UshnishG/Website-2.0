@@ -17,7 +17,7 @@ export const About = () => {
         <div className="lg:w-1/2 w-full flex justify-center items-center px-4">
           <div className="w-full max-w-[500px] h-auto p-4 lg:p-6">
             <Image
-              src="/assets/Recruiting24.png"
+              src="/assets/Recruiting24.jpg"
               alt="About"
               width={500}
               height={300}
