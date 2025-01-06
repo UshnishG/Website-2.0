@@ -8,7 +8,7 @@ export const Footer = () => {
       <div className="sm:flex sm:items-center sm:justify-between">
         <div className="flex mt-4 sm:justify-center sm:mt-0 w-full items-center justify-center">
         <a
-  href="https://www.linkedin.com/"
+  href="https://www.linkedin.com/company/futurix-srmist/"
   className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
   aria-label="LinkedIn page"
 >
@@ -49,29 +49,11 @@ export const Footer = () => {
         <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
-              <a href="https://flowbite.com/" className="flex items-center">
+              <a href="/" className="flex items-center">
               <Image src={logo} alt="logo" width={1000} height={400} className="w-40"/>
               </a>
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-              <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                  <li className="mb-4">
-                    <a href="https://flowbite.com/" className="hover:underline">
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://tailwindcss.com/"
-                      className="hover:underline"
-                    >
-                    
-                    </a>
-                  </li>
-                </ul>
-              </div>
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                   Follow us
@@ -91,23 +73,6 @@ export const Footer = () => {
                       className="hover:underline"
                     >
                       LinkedIn
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
-                  Legal
-                </h2>
-                <ul className="text-gray-500 dark:text-gray-400 font-medium">
-                  <li className="mb-4">
-                    <a href="#" className="hover:underline">
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:underline">
-                      Terms &amp; Conditions
                     </a>
                   </li>
                 </ul>

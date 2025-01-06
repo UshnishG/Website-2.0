@@ -14,11 +14,7 @@ export const Sponsors = () => {
     <div id="sponsors" className="p-10 rounded-3xl m-4 shadow-lg">
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold text-white">Our Sponsors</h1>
-        <p className="text-white">We are proudly supported by these amazing sponsors.</p>
-        <p>Interested in Sponsoring</p>
-        <DottedButton className="m-4">
-            Sponser us
-        </DottedButton>
+        <h2 className="test-4xl text-white">We are proudly supported by these amazing sponsors.</h2>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">

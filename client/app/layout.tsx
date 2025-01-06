@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display } from "next/font/google";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
+import MouseTrail from "../components/Mousetrail/MouseTrail"; // Correct import path
 import "./globals.css";
 
 const playfairDisplay = Playfair_Display({
@@ -14,16 +15,15 @@ export const metadata: Metadata = {
   description: "Futurix C.Tech Official Student Association",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <html lang="en">
       <body className={`${playfairDisplay.variable} antialiased`}>
+        <MouseTrail /> {/* Add the MouseTrail globally */}
         <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

@@ -2,7 +2,8 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { Calendar } from "../../callender/page";
-import Devfolio from "../../ui/DevfolioBtn"; // Update this path as needed
+import Devfolio from "../../ui/DevfolioBtn";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export const Hero = () => {
   return (
@@ -44,19 +45,54 @@ export const Hero = () => {
             from across different departments for 3 days of creation, innovation,
             and fun.
           </p>
-          <div className="flex items-center gap-3 px-6 py-3">
-            {/* Integrating the Devfolio Component */}
-            <Devfolio />
+
+          {/* Centered Social Media and Devfolio */}
+          <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-6 mt-6">
+            {/* Follow Us Text */}
+            <div className="flex flex-col sm:flex-row items-center gap-4">
+              <p className="text-2xl sm:text-3xl font-bold text-white">
+                Follow us for more updates
+              </p>
+
+              {/* Social Media Icons */}
+              <div className="flex gap-4 sm:gap-6">
+                <a
+                  href="https://www.instagram.com/futurix.ctech?igsh=MXJ2eXc4enRsYTNjeg=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-pink-500 hover:text-pink-400 text-3xl sm:text-4xl lg:text-5xl transition"
+                  aria-label="Follow us on Instagram"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/futurix-srmist/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-700 hover:text-blue-600 text-3xl sm:text-4xl lg:text-5xl transition"
+                  aria-label="Follow us on LinkedIn"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
+            </div>
+
+            {/* Devfolio Button */}
+            <div className="flex items-center">
+              <Devfolio />
+            </div>
           </div>
         </div>
       </div>
 
       {/* Calendar Section */}
       <div className="w-full flex flex-col items-center justify-center bg-black/70 py-12 px-4">
-        <h2 className="text-3xl font-bold text-white mb-6">Event Calendar</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Event Calendar</h2>
         <Calendar />
         <div className="mt-6 px-6 py-4 bg-gray-800 text-gray-200 rounded-lg w-full max-w-3xl">
-          <p className="text-lg font-light">Select a date to see the summary of events scheduled for the day.</p>
+          <p className="text-base sm:text-lg font-light">
+            Select a date to see the summary of events scheduled for the day.
+          </p>
         </div>
       </div>
     </div>
