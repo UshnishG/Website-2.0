@@ -5,8 +5,8 @@ import React from "react";
 export const Sponsors = () => {
   const sponsors = [
     { id: 1, logo: "/assets/devfolio.png" },
-    { id: 2, logo: "/assets/sublime.jpeg" },
-    { id: 3, logo: "/assets/sublime.jpeg" },
+    { id: 2, logo: "/assets/polygon.png" },
+    { id: 3, logo: "/assets/eth.png" },
     { id: 4, logo: "/assets/sublime.jpeg" },
     { id: 5, logo: "/assets/sublime.jpeg" },
     { id: 6, logo: "/assets/sublime.jpeg" },
@@ -41,7 +41,7 @@ export const Sponsors = () => {
               alt={`Sponsor ${sponsor.id}`}
               className="w-full h-auto object-contain"
               style={{
-                maxHeight: sponsor.id === 1 ? "30px" : "50px", // Reduce size for Devfolio
+                maxHeight: "30px", // Apply the same maxHeight for all logos
                 width: "auto",
               }}
             />
