@@ -8,7 +8,7 @@ const BackgroundVideo: React.FC = () => {
         autoPlay
         loop
         muted
-        className="object-cover w-full h-full"
+        className="absolute top-0 left-0 object-cover min-w-full min-h-full"
       >
         <source src="/assets/videoplayback.webm" type="video/webm" />
         Your browser does not support the video tag.
