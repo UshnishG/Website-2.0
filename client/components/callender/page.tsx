@@ -1,21 +1,13 @@
-import React, { useState } from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 
 export const Calendar = () => {
-  const year = new Date().getFullYear();
-  const month = 0; // Fixed to January (0-indexed)
-
-  const firstDayOfMonth = new Date(year, month, 1);
-  const lastDayOfMonth = new Date(year, month + 1, 0);
+  const [year, setYear] = useState<number | null>(null);
+  const [days, setDays] = useState<(number | null)[]>([]);
+  const [selectedDate, setSelectedDate] = useState<number | null>(null);
 
   const daysOfWeek = ["S", "M", "T", "W", "T", "F", "S"];
-
-  const days = [];
-  for (let i = 0; i < firstDayOfMonth.getDay(); i++) {
-    days.push(null);
-  }
-  for (let i = 1; i <= lastDayOfMonth.getDate(); i++) {
-    days.push(i);
-  }
 
   const timelineData: Record<number, string[]> = {
     29: [
@@ -28,7 +20,27 @@ export const Calendar = () => {
     31: ["Annual Review at 3 PM"],
   };
 
-  const [selectedDate, setSelectedDate] = useState<number | null>(null);
+  // Perform date calculations in useEffect (client-side)
+  useEffect(() => {
+    const currentYear = new Date().getFullYear();
+    const firstDayOfMonth = new Date(currentYear, 0, 1);
+    const lastDayOfMonth = new Date(currentYear, 1, 0);
+
+    const calculatedDays: (number | null)[] = [];
+    for (let i = 0; i < firstDayOfMonth.getDay(); i++) {
+      calculatedDays.push(null);
+    }
+    for (let i = 1; i <= lastDayOfMonth.getDate(); i++) {
+      calculatedDays.push(i);
+    }
+
+    setYear(currentYear);
+    setDays(calculatedDays);
+  }, []);
+
+  if (!year) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <div className="flex justify-center items-center py-10">
