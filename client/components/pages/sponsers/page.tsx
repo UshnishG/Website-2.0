@@ -5,8 +5,8 @@ import React from "react";
 export const Sponsors = () => {
   const sponsors = [
     { id: 1, logo: "/assets/devfolio.png", name: "DEVFOLIO LOGO" }, // Devfolio
-    { id: 2, logo: "/assets/polygon.png", name: "POLYGON LOGO" },   // Polygon
-    { id: 3, logo: "/assets/eth.png", name: "ETHINDIA LOGO" },      // EthIndia
+    { id: 2, logo: "/assets/eth.png", name: "POLYGON LOGO" },   // Polygon
+    { id: 3, logo: "/assets/polygon.png", name: "ETHINDIA LOGO" },      // EthIndia
     { id: 4, logo: "/assets/sublime.jpeg", name: "Sublime" }
   ];
 
@@ -32,9 +32,6 @@ export const Sponsors = () => {
           <div
             key={sponsor.id}
             className="flex justify-center items-center"
-            style={{
-              filter: "drop-shadow(0 0 10px rgba(255, 255, 255, 0.8))",
-            }}
           >
             <img
               src={sponsor.logo}

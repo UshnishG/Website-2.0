@@ -6,31 +6,39 @@ import aboutData from "@/data/Event.json"; // Adjust the path as necessary
 
 export const About = () => {
   return (
-    <div className="w-full flex flex-col" id="aboutus">
-      <div className="lg:flex max-lg:flex-col max-lg:gap-5 h-auto justify-center items-center">
-        <div className="lg:w-1/2 w-full flex flex-col justify-start items-center px-4">
-          <h1 className="text-3xl font-bold text-white-900 text-center">
+    <div className="w-full flex flex-col py-12" id="aboutus">
+      {/* About Event Section */}
+      <div className="lg:flex max-lg:flex-col max-lg:gap-8 h-auto justify-center items-center px-6 lg:px-12">
+        {/* Text Section */}
+        <div className="lg:w-1/2 w-full flex flex-col justify-start items-center text-center lg:text-left px-4">
+          <h1 className="text-4xl font-bold text-black mb-4">
             {aboutData.eventName}
           </h1>
-          <p className="text-center">{aboutData.eventSummary}</p>
+          <p className="text-xl text-lg leading-relaxed text-white-700">
+            {aboutData.eventSummary}
+          </p>
         </div>
-        <div className="lg:w-1/2 w-full flex justify-center items-center px-4">
-          <div className="w-full max-w-[500px] h-auto p-4 lg:p-6">
+
+        {/* Image Section */}
+        <div className="lg:w-1/2 w-full flex justify-center items-center px-4 mt-8 lg:mt-0">
+          <div className="w-full max-w-[500px] h-auto p-4 lg:p-6 rounded-lg shadow-lg">
             <Image
               src="/assets/Recruiting24.jpg"
-              alt="About"
+              alt="About Ultron 8.0"
               width={500}
               height={300}
-              className="w-full h-auto rounded-lg" // Ensures the image maintains its aspect ratio and scales responsively
+              className="w-full h-auto rounded-lg object-cover"
             />
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-12 pb-8">
+
+      {/* FAQ Accordion Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 lg:px-12 pt-12">
         {aboutData.accordionItems.map((item, index) => (
-          <div className="rounded" key={index}>
+          <div className="rounded-lg p-4 shadow-md" key={index}>
             <AccordionExpand
-              expandDefault={false} // Expand the first accordion item
+              expandDefault={false}
               heading={item.heading}
               content={item.content}
             />
