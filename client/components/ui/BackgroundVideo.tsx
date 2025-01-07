@@ -10,7 +10,7 @@ const BackgroundVideo: React.FC = () => {
         muted
         className="absolute top-0 left-0 object-cover min-w-full min-h-full"
       >
-        <source src="/assets/videoplayback1.webm" type="video/webm" />
+        <source src="/assets/videoplayback.webm" type="video/webm" />
         Your browser does not support the video tag.
       </video>
     </div>
