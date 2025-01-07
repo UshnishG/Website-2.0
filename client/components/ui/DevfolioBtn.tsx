@@ -23,9 +23,10 @@ const Devfolio: React.FC = () => {
 
   return (
     <div
-      className="apply-button "
-      data-hackathon-slug="ultron-8" // Replace with the actual slug
-      data-button-theme="dark"
+      className="apply-button"
+      data-hackathon-slug="YOUR-HACKATHON-SLUG" // Replace with the actual slug
+      data-button-theme="light"
+      style={{ height: "44px", width: "312px" }}
     ></div>
   );
 };
