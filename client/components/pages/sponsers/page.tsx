@@ -4,12 +4,12 @@ import React from "react";
 
 export const Sponsors = () => {
   const sponsors = [
-    { id: 1, logo: "/assets/devfolio.png" },
-    { id: 2, logo: "/assets/polygon.png" },
-    { id: 3, logo: "/assets/eth.png" },
-    { id: 4, logo: "/assets/sublime.jpeg" },
-    { id: 5, logo: "/assets/sublime.jpeg" },
-    { id: 6, logo: "/assets/sublime.jpeg" },
+    { id: 1, logo: "/assets/devfolio.png", name: "DEVFOLIO LOGO" },
+    { id: 2, logo: "/assets/polygon.png", name: "POLYGON LOGO" },
+    { id: 3, logo: "/assets/eth.png", name: "ETHINDIA LOGO" },
+    { id: 4, logo: "/assets/sublime.jpeg", name: "Sublime" },
+    { id: 5, logo: "/assets/sublime.jpeg", name: "Sublime" },
+    { id: 6, logo: "/assets/sublime.jpeg", name: "Sublime" },
   ];
 
   return (
@@ -38,10 +38,10 @@ export const Sponsors = () => {
           >
             <img
               src={sponsor.logo}
-              alt={`Sponsor ${sponsor.id}`}
+              alt={`${sponsor.name} logo`}
               className="w-full h-auto object-contain"
               style={{
-                maxHeight: "30px", // Apply the same maxHeight for all logos
+                maxHeight: "30px", // Consistent size for all logos
                 width: "auto",
               }}
             />
