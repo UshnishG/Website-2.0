@@ -4,12 +4,10 @@ import React from "react";
 
 export const Sponsors = () => {
   const sponsors = [
-    { id: 1, logo: "/assets/devfolio.png", name: "DEVFOLIO LOGO" },
-    { id: 2, logo: "/assets/polygon.png", name: "POLYGON LOGO" },
-    { id: 3, logo: "/assets/eth.png", name: "ETHINDIA LOGO" },
-    { id: 4, logo: "/assets/sublime.jpeg", name: "Sublime" },
-    { id: 5, logo: "/assets/sublime.jpeg", name: "Sublime" },
-    { id: 6, logo: "/assets/sublime.jpeg", name: "Sublime" },
+    { id: 1, logo: "/assets/devfolio.png", name: "DEVFOLIO LOGO" }, // Devfolio
+    { id: 2, logo: "/assets/polygon.png", name: "POLYGON LOGO" },   // Polygon
+    { id: 3, logo: "/assets/eth.png", name: "ETHINDIA LOGO" },      // EthIndia
+    { id: 4, logo: "/assets/sublime.jpeg", name: "Sublime" }
   ];
 
   return (
@@ -27,7 +25,9 @@ export const Sponsors = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center">
+      <div
+        className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-6 items-center"
+      >
         {sponsors.map((sponsor) => (
           <div
             key={sponsor.id}
@@ -38,12 +38,8 @@ export const Sponsors = () => {
           >
             <img
               src={sponsor.logo}
-              alt={`${sponsor.name} logo`}
-              className="w-full h-auto object-contain"
-              style={{
-                maxHeight: "30px", // Consistent size for all logos
-                width: "auto",
-              }}
+              alt={sponsor.name}
+              className="w-auto h-16 object-contain"
             />
           </div>
         ))}
