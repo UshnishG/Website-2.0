@@ -173,7 +173,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#faq"
+                href="#aboutus"
                 className="block px-4 py-2 text-white transition-colors duration-300 hover:text-cyan-300 sm:px-0"
               >
                 FAQ
