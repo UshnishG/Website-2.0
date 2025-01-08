@@ -11,13 +11,10 @@ export const Calendar = () => {
 
   const timelineData: Record<number, string[]> = {
     29: [
-      "Team Meeting at 10 AM",
-      "Team Lunch at 1 PM",
-      "Client Meeting at 3 PM",
-      "Team Dinner at 7 PM",
+      "Coming Soon"
     ],
-    30: ["Project Deadline at 5 PM"],
-    31: ["Annual Review at 3 PM"],
+    30: ["Coming Soon"],
+    31: ["Coming Soon"],
   };
 
   // Perform date calculations in useEffect (client-side)
