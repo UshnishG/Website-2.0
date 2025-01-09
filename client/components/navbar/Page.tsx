@@ -5,13 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
+
   const [isLoading, setIsLoading] = useState(true);
   const [loadingPercentage, setLoadingPercentage] = useState(0);
 
-  const toggleMenu = () => {
-    setIsMenuVisible((prevState) => !prevState);
-  };
+
 
   // Simulate loading process
   useEffect(() => {
