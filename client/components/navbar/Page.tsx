@@ -9,8 +9,6 @@ const Navbar = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [loadingPercentage, setLoadingPercentage] = useState(0);
 
-
-
   // Simulate loading process
   useEffect(() => {
     let interval: NodeJS.Timeout; // Explicitly typing the interval variable
@@ -28,7 +26,6 @@ const Navbar = () => {
     }
     return () => clearInterval(interval); // Cleanup to avoid memory leaks
   }, [isLoading]);
-  
 
   if (isLoading) {
     return (
@@ -63,20 +60,20 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-5 left-1/2 transform -translate-x-1/2 z-50 bg-gray-900 bg-opacity-70 shadow-lg rounded-full w-[90%] px-12 py-6 backdrop-blur-sm">
-      <div className="flex items-center justify-between w-full">
-        {/* Logo Section */}
-        <div className="flex items-center">
+     <div className="flex items-center justify-between w-full px-4 space-x-6">
+        {/* Logo Section (visible only on larger screens) */}
+        <div className="hidden md:flex items-center">
           <Image
             src={logo}
             alt="logo"
             width={1000}
             height={400}
-            className="w-16 md:w-20"
+            className="w-30 md:w-40"
           />
         </div>
 
         {/* Navigation Menu */}
-        <ul className="flex space-x-8 text-white text-sm md:text-base">
+        <ul className="flex flex-row space-x-8 text-white text-sm md:text-base">
           <li>
             <Link
               href="/"
