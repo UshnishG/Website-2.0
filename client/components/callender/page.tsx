@@ -9,15 +9,19 @@ export const Calendar = () => {
 
   const daysOfWeek = ["S", "M", "T", "W", "T", "F", "S"];
 
-  const timelineData: Record<number, string[]> = {
+  const timelineData: Record<number, { time: string; event: string }[]> = {
     29: [
-      "Coming Soon"
+       { time: "               ", event: "Coming Soon" },
+       //{ time: "01:00 PM - 03:00 PM", event: "Hackathon Kickoff" },
     ],
-    30: ["Coming Soon"],
-    31: ["Coming Soon"],
+    30: [
+      { time: "                 ", event: "Coming Soon" },
+    ],
+    31: [
+      { time: "                 ", event: "Coming Soon" },
+    ],
   };
 
-  // Perform date calculations in useEffect (client-side)
   useEffect(() => {
     const currentYear = new Date().getFullYear();
     const firstDayOfMonth = new Date(currentYear, 0, 1);
@@ -40,12 +44,14 @@ export const Calendar = () => {
   }
 
   return (
-    <div className="flex justify-center items-center py-10">
-      <div className="bg-gray-900 bg-opacity-60 max-w-fit rounded-lg shadow-lg p-8">
+    <div className="flex justify-center items-center py-10 px-4">
+      <div className="bg-gray-900 bg-opacity-60 max-w-full md:max-w-lg rounded-lg shadow-lg p-4 sm:p-8">
         {/* Calendar Header */}
         <div className="text-center mb-6">
-          <h1 className="text-3xl font-bold text-white">January {year}</h1>
-          <div className="grid grid-cols-7 text-lg text-gray-400 mt-4">
+          <h1 className="text-2xl md:text-3xl font-bold text-white">
+            January {year}
+          </h1>
+          <div className="grid grid-cols-7 text-sm sm:text-lg text-gray-400 mt-4">
             {daysOfWeek.map((day, index) => (
               <div key={index} className="text-center font-medium">
                 {day}
@@ -55,13 +61,13 @@ export const Calendar = () => {
         </div>
 
         {/* Calendar Grid */}
-        <div className="grid grid-cols-7 gap-4 text-center">
+        <div className="grid grid-cols-7 gap-2 sm:gap-4 text-center">
           {days.map((day, index) =>
             day ? (
               <button
                 key={index}
                 type="button"
-                className={`h-16 w-16 flex flex-col items-center justify-center rounded-md text-lg font-semibold transition-all ${
+                className={`h-12 w-12 sm:h-16 sm:w-16 flex flex-col items-center justify-center rounded-md text-sm sm:text-lg font-semibold transition-all ${
                   timelineData[day]
                     ? "bg-indigo-600 text-white hover:bg-indigo-700 shadow-md"
                     : "bg-gray-700 bg-opacity-60 text-gray-300 hover:bg-gray-600"
@@ -78,25 +84,40 @@ export const Calendar = () => {
                 )}
               </button>
             ) : (
-              <div key={index} className="h-16 w-16"></div>
+              <div key={index} className="h-12 w-12 sm:h-16 sm:w-16"></div>
             )
           )}
         </div>
 
-        {/* Timeline Section */}
+        {/* Modernized Timeline Section */}
         {selectedDate && (
-          <div className="mt-8 bg-gray-800 bg-opacity-60 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-white mb-4">
+          <div className="mt-6 sm:mt-8 bg-gray-800 bg-opacity-60 p-4 sm:p-6 rounded-lg shadow-lg">
+            <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4 flex items-center gap-2">
               Timeline for {selectedDate} January {year}
             </h3>
             {timelineData[selectedDate] ? (
-              <ul className="list-disc list-inside space-y-2 text-gray-300">
-                {timelineData[selectedDate].map((event, idx) => (
-                  <li key={idx}>{event}</li>
+              <div className="space-y-4">
+                {timelineData[selectedDate].map((entry, idx) => (
+                  <div
+                    key={idx}
+                    className="flex items-center justify-between bg-gray-700 bg-opacity-80 p-4 rounded-lg shadow-md"
+                  >
+                    <div className="text-sm sm:text-base font-semibold text-white">
+                      {entry.time}
+                    </div>
+                    <div className="text-sm sm:text-base text-gray-300">
+                      {entry.event}
+                    </div>
+                  </div>
                 ))}
-              </ul>
+              </div>
             ) : (
-              <p className="text-gray-400">No events scheduled for this date.</p>
+              <div className="flex items-center gap-4 bg-gray-700 bg-opacity-80 p-4 rounded-lg shadow-md">
+                <span className="material-icons text-gray-400 text-3xl"></span>
+                <p className="text-gray-400 text-sm sm:text-base">
+                  No events scheduled for this date.
+                </p>
+              </div>
             )}
           </div>
         )}
