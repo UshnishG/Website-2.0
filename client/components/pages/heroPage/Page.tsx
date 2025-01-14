@@ -2,8 +2,8 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { Calendar } from "../../callender/page";
-import Devfolio from "../../ui/DevfolioBtn";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+
+import DottedButton from "../../ui/Button";
 
 export const Hero = () => {
   return (
@@ -20,9 +20,9 @@ export const Hero = () => {
       </video>
 
       {/* Hero Content */}
-      <div className="w-full sm:h-[60vh] h-[80vh] px-6 sm:px-12 py-8 sm:py-16 flex flex-col justify-center items-center text-white bg-black/50">
-        <div className="flex flex-col items-start justify-center h-full gap-6 w-5/6 lg:w-2/3 text-center lg:text-left">
-          <h1 className="text-4xl lg:text-5xl font-bold">Join ULTRON 8.0</h1>
+      <div className="w-full h-auto flex flex-col justify-center items-center text-white bg-black/50 px-6 sm:px-12 pt-0 pb-8 sm:pb-16">
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-8 w-full max-w-5xl lg:gap-10">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold">Join ULTRON 8.0</h1>
           <div className="relative w-full">
             <TypeAnimation
               sequence={[
@@ -36,63 +36,49 @@ export const Hero = () => {
                 1000,
               ]}
               speed={50}
-              style={{ fontSize: "1.2em" }}
+              className="text-lg sm:text-xl lg:text-2xl"
               repeat={Infinity}
             />
           </div>
-          <p className="lg:text-2xl text-xl font-light leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl font-light leading-relaxed lg:leading-loose">
             Join us from 29th January to 31st January with over 300 students
             from across different departments for 3 days of creation, innovation,
             and fun.
           </p>
 
-          {/* Centered Social Media and Devfolio */}
-          <div className="flex flex-col sm:flex-row items-center justify-center w-full gap-6 mt-6">
-            {/* Follow Us Text */}
-            <div className="flex flex-col sm:flex-row items-center gap-4">
-              <p className="text-2xl sm:text-3xl font-bold text-white">
-                Follow us for more updates
-              </p>
-
-              {/* Social Media Icons */}
-              <div className="flex gap-4 sm:gap-6">
-                <a
-                  href="https://www.instagram.com/futurix.ctech?igsh=MXJ2eXc4enRsYTNjeg=="
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-pink-500 hover:text-pink-400 text-3xl sm:text-4xl lg:text-5xl transition"
-                  aria-label="Follow us on Instagram"
-                >
-                  <FaInstagram />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/futurix-srmist/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-700 hover:text-blue-600 text-3xl sm:text-4xl lg:text-5xl transition"
-                  aria-label="Follow us on LinkedIn"
-                >
-                  <FaLinkedin />
-                </a>
-              </div>
-            </div>
-
-            {/* Devfolio Button */}
-            <div className="flex items-center">
-              <Devfolio />
+          {/* Apply Section */}
+          <div className="flex flex-col items-center w-full gap-6 mt-8 lg:mt-10">
+            <p className="text-3xl sm:text-4xl lg:text-5xl font-semibold">Apply Here</p>
+            <div className="flex flex-wrap items-center justify-center gap-6 lg:gap-8">
+              <DottedButton
+                src="/assets/Hackvengers.png"
+                alt="Join Hackvengers"
+                href="https://ultron-8.devfolio.co/"
+                target="_blank"
+                className="w-40 sm:w-56 md:w-64 lg:w-72 xl:w-80"
+              />
+              <DottedButton
+                src="/assets/OpenMic.png"
+                alt="Join Openmic"
+                target="_blank"
+                href="https://forms.gle/DVyJehRJ1zWxnpM68"
+                className="w-40 sm:w-56 md:w-64 lg:w-72 xl:w-80"
+              />
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* Calendar Section */}
-      <div className="w-full flex flex-col items-center justify-center bg-black/70 py-12 px-4">
-        <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">Event Calendar</h2>
-        <Calendar />
-        <div className="mt-6 px-6 py-4 bg-gray-800 text-gray-200 rounded-lg w-full max-w-3xl">
-          <p className="text-base sm:text-lg font-light">
-            Select a date to see the summary of events scheduled for the day.
-          </p>
+          {/* Calendar Section */}
+          <div className="w-full flex flex-col items-center bg-black/70 pt-6 px-6 sm:px-8 lg:px-12 rounded-lg mt-8 lg:mt-12">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 lg:mb-6">
+              Event Calendar
+            </h2>
+            <Calendar />
+            <div className="mt-4 px-6 py-4 bg-gray-800 text-gray-200 rounded-lg w-full max-w-4xl">
+              <p className="text-sm sm:text-base lg:text-lg font-light leading-relaxed">
+                Select a date to see the summary of events scheduled for the day.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ interface DottedButtonProps {
   alt: string;
   href?: string;
   className?: string;
+  target?: string;
   size?: string; // Optional size prop to control the image size dynamically
 }
 
@@ -18,9 +19,13 @@ const DottedButton: React.FC<DottedButtonProps> = ({ src, alt, href, className =
     />
   );
 
-  // If an href is provided, wrap the image in a Link component
+  // If an href is provided, wrap the image in an anchor tag with target="_blank"
   if (href) {
-    return <Link href={href}>{imageContent}</Link>;
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer">
+        {imageContent}
+      </a>
+    );
   }
 
   // If no href, just return the image
