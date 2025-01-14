@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import { Calendar } from "../../callender/page";
 
 import DottedButton from "../../ui/Button";
+import { FaWhatsapp } from "react-icons/fa";
 
 export const Hero = () => {
   return (
@@ -67,6 +68,21 @@ export const Hero = () => {
             </div>
           </div>
 
+          {/* WhatsApp Group Section */}
+          <div className="w-full flex flex-col items-center pt-6 px-6 sm:px-8 lg:px-12 rounded-lg mt-8 lg:mt-12">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 lg:mb-6">
+              Join Our WhatsApp Group
+            </h2>
+            <a
+              href="https://chat.whatsapp.com/FOHK8Ahm7guCZz6a9eEp20"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 py-2 px-4 rounded-lg text-lg font-semibold shadow-lg hover:bg-green-100 transition-all text-white border border-green-200"
+            >
+              <FaWhatsapp size={24} /> Join
+            </a>
+          </div>
+
           {/* Calendar Section */}
           <div className="w-full flex flex-col items-center bg-black/70 pt-6 px-6 sm:px-8 lg:px-12 rounded-lg mt-8 lg:mt-12">
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 lg:mb-6">
@@ -79,6 +95,8 @@ export const Hero = () => {
               </p>
             </div>
           </div>
+
+          
         </div>
       </div>
     </div>
