@@ -10,17 +10,25 @@ export const Calendar = () => {
   const daysOfWeek = ["S", "M", "T", "W", "T", "F", "S"];
 
   const timelineData: Record<number, { time: string; event: string }[]> = {
+    25: [
+        { time: "Till 11:59 PM", event: "Form Submission Deadline" },
+    ],
+    28: [
+        { time: "Till 12:00 PM", event: "Round 1 PPT Submission Deadline" },
+    ],
     29: [
-       { time: "               ", event: "Coming Soon" },
-       //{ time: "01:00 PM - 03:00 PM", event: "Hackathon Kickoff" },
+        { time: "10:00 AM", event: "Hackathon Orientation" },
+        { time: "03:00 PM", event: "Hackathon Start" },
     ],
     30: [
-      { time: "                 ", event: "Coming Soon" },
+        { time: "03:00 PM", event: "Hackathon End" },
     ],
     31: [
-      { time: "                 ", event: "Coming Soon" },
+        { time: "09:00 AM", event: "Open Mic" },
+        { time: "02:00 PM", event: "Prize Distribution" },
     ],
-  };
+};
+
 
   useEffect(() => {
     const currentYear = new Date().getFullYear();
