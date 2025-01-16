@@ -4,6 +4,7 @@ import { About } from "@/components/pages/AboutEventPage/page";
 import { Prizes } from "@/components/pages/Prizes/page";
 import { Sponsors } from "@/components/pages/sponsers/page";
 import { Footer } from "@/components/Footer/page";
+import { Tracks } from "@/components/pages/Tracks/page";
 import BackgroundVideo from "@/components/ui/BackgroundVideo";
 
 export default function Home() {
@@ -13,7 +14,9 @@ export default function Home() {
       <Navbar />
       <main className="mt-32 w-full relative">
         <Hero />
+        <Tracks />
         <About />
+        
         <Prizes />
         <Sponsors />
         <Footer />

@@ -3,6 +3,11 @@ import React from "react";
 import Image from "next/image";
 import AccordionExpand from "@/components/Accordance/page";
 import aboutData from "@/data/Event.json"; // Adjust the path as necessary
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 export const About = () => {
   return (
@@ -19,39 +24,43 @@ export const About = () => {
           </p>
         </div>
 
-        {/* Image Section */}
+        {/* Image Carousel Section */}
         <div className="lg:w-1/2 w-full flex justify-center items-center px-4 mt-8 lg:mt-0">
-          <div className="w-full max-w-[500px] h-auto p-4 lg:p-6 rounded-lg shadow-lg">
-            <Image
-              src="/assets/Poster1.jpg"
-              alt="About Ultron 8.0"
-              width={500}
-              height={300}
-              className="w-full h-auto rounded-lg object-cover"
-            />
-          </div>
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={10}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            className="w-full max-w-[500px]"
+          >
+            <SwiperSlide>
+  <div className="w-full h-auto p-4 lg:p-6 rounded-lg shadow-lg bg-blue-100">
+    <Image
+      src="/assets/Poster1.jpg"
+      alt="About Ultron 8.0"
+      width={500}
+      height={300}
+      className="w-full h-auto rounded-lg object-cover"
+    />
+  </div>
+</SwiperSlide>
+<SwiperSlide>
+  <div className="w-full h-auto p-4 lg:p-6 rounded-lg shadow-lg bg-red-100">
+    <Image
+      src="/assets/hack.jpg"
+      alt="About Ultron 8.0"
+      width={500}
+      height={300}
+      className="w-full h-auto rounded-lg object-cover"
+    />
+  </div>
+</SwiperSlide>
+
+          </Swiper>
         </div>
       </div>
-
-      {/* Posters Section
-      <div className="w-full flex flex-col items-center justify-center px-4 lg:px-12 pt-12 pb-16">
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-items-center">
-          {[0, 1].map((index) => (
-            <div
-              className="w-full max-w-[500px] h-auto p-4 rounded-lg shadow-lg bg-white"
-              key={index}
-            >
-              <Image
-                src={`/assets/Poster${index + 1}.jpg`}
-                alt={`Poster ${index + 1}`}
-                width={500}
-                height={300}
-                className="w-full h-auto rounded-lg object-cover"
-              />
-            </div>
-          ))}
-        </div>
-      </div> */}
 
       {/* FAQ Accordion Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 lg:px-12 pt-8" id="faq">

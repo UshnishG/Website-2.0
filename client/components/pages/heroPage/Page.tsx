@@ -77,7 +77,7 @@ export const Hero = () => {
               href="https://chat.whatsapp.com/FOHK8Ahm7guCZz6a9eEp20"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 py-2 px-4 rounded-lg text-lg font-semibold shadow-lg hover:bg-black-100 transition-all text-white border border-green-200"
+              className="flex items-center gap-3 py-2 px-4 rounded-lg text-lg font-semibold shadow-lg hover:bg-black-100 transition-all text-green border border-green-200"
             >
               <FaWhatsapp size={24} /> Join
             </a>
